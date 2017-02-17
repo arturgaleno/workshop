@@ -1,0 +1,12 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+module: default
+
+handlers:
+- url: /.*
+  script: src.main.app
+
+libraries:
+- name: numpy
+  version: latest

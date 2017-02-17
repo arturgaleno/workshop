@@ -26,7 +26,6 @@ RUN pip install numpy
 RUN pip install WebOb
 RUN pip install Paste
 RUN pip install webapp2
-RUN pip install pycrypto
 
 RUN wget -P /root/ https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-142.0.0-linux-x86_64.tar.gz
 RUN tar zxf /root/google-cloud-sdk-142.0.0-linux-x86_64.tar.gz -C /root/
