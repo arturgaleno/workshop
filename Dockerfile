@@ -30,6 +30,7 @@ RUN pip install webapp2
 RUN wget -P /root/ https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-142.0.0-linux-x86_64.tar.gz
 RUN tar zxf /root/google-cloud-sdk-142.0.0-linux-x86_64.tar.gz -C /root/
 RUN rm /root/google-cloud-sdk-142.0.0-linux-x86_64.tar.gz
+ADD recommender /root/recommender
 #RUN cp /root/google-cloud-sdk/platform/google_appengine/lib/fancy_urllib/fancy_urllib/__init__.py /root/google-cloud-sdk/platform/google_appengine/lib/fancy_urllib/__init__.py
 
 RUN mkdir /root/.ssh
