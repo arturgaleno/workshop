@@ -1,6 +1,6 @@
 import webapp2
-from src.queue import TrainQueue
+import services
 
 app = webapp2.WSGIApplication([
-    ('/train', TrainQueue),
+    ('/services/register', services.AccessHandler),
 ], debug=True)
