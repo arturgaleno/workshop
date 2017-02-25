@@ -26,18 +26,20 @@ Agora você pode se conectar a instância usando ssh. A senha é: 'screencast'.
 
 > ssh root@localhost -p ssh-port
 
+<p align="justify" style="padding-top: 15px;">
+Depois de conectar ao container, instale o Google App Engine.
+</p>
+
 > google-cloud-sdk/install.sh
-
 > source ~/.bashrc
-
 > gcloud components install core cloud-datastore-emulator gcd-emulator app-engine-python
 
-> export GAE_HOME="/home/everton/google-cloud-sdk/platform/google_appengine"
+<p align="justify" style="padding-top: 15px;">
+Configure as seguintes variaveis de ambiente no bashrc.
+</p>
 
-> # Google App Engine path
+> export GAE_HOME="/root/google-cloud-sdk/platform/google_appengine"
 > export PYTHONPATH="$GAE_HOME:$GAE_HOME/lib/:$GAE_HOME/lib/yaml/"
-
-> # PATH
-> export PATH="$PATH:/home/everton/google-cloud-sdk/platform/google_appengine"
-
+> export PATH="$PATH:/root/google-cloud-sdk/platform/google_appengine"
 > cp /root/google-cloud-sdk/platform/google_appengine/lib/fancy_urllib/fancy_urllib/__init__.py /root/google-cloud-sdk/platform/google_appengine/lib/fancy_urllib/__init__.py
+> source ~/.bashrc
